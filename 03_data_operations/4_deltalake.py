@@ -28,7 +28,7 @@ df.write.format("delta")\
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC Select * from delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink/\`
+# MAGIC Select * from delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink/`
 
 # COMMAND ----------
 
@@ -38,13 +38,13 @@ df.write.format("delta")\
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC update delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink/\` 
+# MAGIC update delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink/` 
 # MAGIC set income=1000 where CUST_ID=5
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC Select * from delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink/\`
+# MAGIC Select * from delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink/`
 
 # COMMAND ----------
 
@@ -76,7 +76,7 @@ dlt_obj.alias("trg").merge(df.alias("src"),"trg.CUST_ID= src.CUST_ID")\
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC select * from delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink/\`
+# MAGIC select * from delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink/`
 
 # COMMAND ----------
 
