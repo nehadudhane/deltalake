@@ -15,29 +15,29 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC describe history delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\`
+# MAGIC describe history delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink`
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC select * from delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\`
+# MAGIC select * from delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink`
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC restore delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\` 
+# MAGIC restore delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink` 
 # MAGIC to version as of 3
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC select * from delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\`
+# MAGIC select * from delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink`
 # MAGIC version as of 2
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC select * from delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\`
+# MAGIC select * from delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink`
 # MAGIC timestamp as of '2026-08-02T03:02:43.000+00:00'
 
 # COMMAND ----------
@@ -50,14 +50,14 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC show tblproperties delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\`
+# MAGIC show tblproperties delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink`
 # MAGIC
 
 # COMMAND ----------
 
 # MAGIC  %sql
 # MAGIC  create table deltalakeneha.default.clonetb1
-# MAGIC  clone delta.\`/Volumes/deltalakeneha/default/deltavol/dmlsink\` version as of 3
+# MAGIC  clone delta.`/Volumes/deltalakeneha/default/deltavol/dmlsink` version as of 3
 # MAGIC
 
 # COMMAND ----------
