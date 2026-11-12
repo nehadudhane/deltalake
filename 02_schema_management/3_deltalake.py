@@ -51,7 +51,7 @@ df.write.format("delta")\
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC select * from delta.\`/Volumes/deltalakeneha/default/deltavol/demosink/\`
+# MAGIC select * from delta.`/Volumes/deltalakeneha/default/deltavol/demosink/`
 
 # COMMAND ----------
 
@@ -76,4 +76,4 @@ df.write.format("delta")\
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC select * from delta.\`/Volumes/deltalakeneha/default/deltavol/demosink/\`
+# MAGIC select * from delta.`/Volumes/deltalakeneha/default/deltavol/demosink/`
